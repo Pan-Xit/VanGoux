@@ -1,0 +1,39 @@
+.users {
+    
+    @include for-large-down {
+        padding-top: 125px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+
+        @include for-large-up {
+            padding-top: 30px;
+        }
+    }
+}
+
+.user {
+    max-width: 250px;
+    padding: 20px;
+    margin-top: 20px;
+
+    @include for-large-up {
+        max-width: 360px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: $secondary-text-color;
+    }
+
+    &__desctiption {
+        margin-top: 20px;
+    }
+}

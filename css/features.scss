@@ -1,0 +1,49 @@
+.features {
+    @include for-large-down {
+        padding-top: 125px;
+    }
+
+    &__list {
+        margin-top: 60px;
+    }
+}
+
+
+
+.feature {
+
+    @include for-large-up {
+        width: 320px;
+    }
+
+    @include for-large-down {
+        &:nth-of-type(n + 2) {
+            margin-top: 60px;
+        }
+    }
+
+    &__header {
+        display: flex;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 40px;
+        
+        @include for-large-up {
+            line-height: 30px;
+        }
+    }
+
+    &__description {
+        padding: 30px 40px;
+
+        @include for-large-up {
+            padding: 40px;
+        }
+    }
+}

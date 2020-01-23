@@ -1,0 +1,20 @@
+.purposes {
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+}
+
+.purpose {
+    display: flex;
+    align-items: center;
+    min-width: 520px;
+    max-width: 540px;
+    margin-top: 40px;
+
+    &__description {
+        margin-left: 20px;
+    }
+}

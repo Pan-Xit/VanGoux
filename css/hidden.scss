@@ -1,0 +1,10 @@
+.hidden-mobile {
+    @include for-large-down {
+        display: none;
+    }
+}
+.hidden-desktop {
+    @include for-large-up {
+        display: none;
+    }
+}

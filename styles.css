@@ -1,0 +1,450 @@
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1968fc;
+}
+.logo__text_header {
+  margin-left: 17px;
+}
+.logo__text_footer {
+  margin-left: 19px;
+}
+
+.btn {
+  border: none;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn__blue {
+  background-color: #1968fc;
+  box-shadow: 0px 10px 40px rgba(25, 104, 252, 0.3);
+  color: white;
+  text-shadow: 0px 10px 40px rgba(25, 104, 252, 0.2);
+}
+.btn__white {
+  background-color: white;
+  box-shadow: 4px 4px 20px rgba(255, 255, 255, 0.4);
+  color: #1968fc;
+}
+
+.navigation__item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.page-header {
+  margin-top: 40px;
+  height: 50px;
+  padding-left: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .page-header {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
+.page-header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 220px;
+  width: 540px;
+}
+.page-header__upload-btn {
+  margin-left: auto;
+  width: 180px;
+}
+
+.headline {
+  padding: 80px 80px 520px 80px;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .headline {
+    padding: 150px 160px 160px 160px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .headline__content {
+    width: 600px;
+  }
+}
+.headline__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+.headline__description {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.headline__upload-btn {
+  margin-top: 40px;
+  width: 300px;
+}
+.headline__pic {
+  position: absolute;
+}
+@media screen and (max-width: 1023px) {
+  .headline__pic {
+    width: calc(100% - 40px);
+    left: 0;
+    bottom: -62px;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: -1;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .headline__pic {
+    top: 200px;
+    right: 160px;
+  }
+}
+
+.visit-desctop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  padding: 0 60px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png");
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.reviews {
+  padding: 50px 50px 0 50px;
+}
+@media screen and (min-width: 1024px) {
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 160px;
+  }
+}
+
+.review {
+  margin: auto;
+  max-width: 540px;
+  padding: 40px;
+  box-shadow: 0px 20px 60px rgba(25, 104, 252, 0.1);
+}
+.review__content {
+  margin-top: 40px;
+}
+@media screen and (max-width: 1023px) {
+  .review:last-child {
+    margin-top: 50px;
+  }
+}
+
+.reviewer {
+  display: flex;
+  position: relative;
+}
+.reviewer__main-info {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.reviewer__name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.reviewer__position {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(25, 103, 250, 0.8);
+}
+.reviewer__quotes {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.workflow__content {
+  margin-top: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .workflow__content {
+    margin-top: 50px;
+  }
+}
+.workflow__content-line {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .workflow__content-line {
+    border-top: 1px dashed #1968fc;
+    flex-grow: 1;
+  }
+  .workflow__content-line:nth-of-type(1) {
+    margin-top: 110px;
+  }
+  .workflow__content-line:nth-of-type(2) {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .workflow__content-line {
+    margin-left: 60px;
+    height: 40px;
+    border-left: 1px dashed #1968fc;
+  }
+}
+
+.workflow-step {
+  padding: 40px;
+}
+.workflow-step__header {
+  display: flex;
+  align-items: flex-start;
+}
+@media screen and (min-width: 1024px) {
+  .workflow-step__header {
+    width: 240px;
+  }
+}
+.workflow-step__subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.workflow-step__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #1967fa;
+}
+.workflow-step__pic {
+  margin-left: auto;
+}
+.workflow-step__description {
+  margin-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .workflow-step__description {
+    margin-top: 20px;
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .features {
+    padding-top: 125px;
+  }
+}
+.features__list {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .feature:nth-of-type(n + 2) {
+    margin-top: 60px;
+  }
+}
+.feature__header {
+  display: flex;
+}
+.feature__name {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .feature__name {
+    line-height: 30px;
+  }
+}
+.feature__description {
+  padding: 30px 40px;
+}
+@media screen and (min-width: 1024px) {
+  .feature__description {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .users {
+    padding-top: 125px;
+  }
+}
+.users__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .users__content {
+    padding-top: 30px;
+  }
+}
+
+.user {
+  max-width: 250px;
+  padding: 20px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .user {
+    max-width: 360px;
+  }
+}
+.user__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #1967fa;
+}
+.user__desctiption {
+  margin-top: 20px;
+}
+
+.purposes__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.purpose {
+  display: flex;
+  align-items: center;
+  min-width: 520px;
+  max-width: 540px;
+  margin-top: 40px;
+}
+.purpose__description {
+  margin-left: 20px;
+}
+
+.section {
+  padding: 120px 60px 0 60px;
+}
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 120px 160px 0 160px;
+  }
+}
+.section__title {
+  position: relative;
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.section__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80px;
+  border: 1px solid #1968fc;
+  box-shadow: 0px 2px 0px #D1E1FE;
+  bottom: -12px;
+}
+@media screen and (min-width: 1024px) {
+  .section__title::after {
+    bottom: -2px;
+    left: -40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section__content-stairs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.section__content-stairs .content-stairs__item {
+  position: relative;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+}
+@media screen and (min-width: 1024px) {
+  .section__content-stairs .content-stairs__item:nth-of-type(2) {
+    margin-top: 40px;
+  }
+  .section__content-stairs .content-stairs__item:nth-of-type(3) {
+    margin-top: 80px;
+  }
+}
+.section__content-stairs .content-stairs__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png");
+  right: -5px;
+  bottom: -5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hidden-desktop {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Muli, sans-serif;
+  color: #11223f;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  background-image: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png");
+  }
+}
+
+h1, h2, p, figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

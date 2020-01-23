@@ -1,0 +1,75 @@
+.workflow {
+    &__content {
+        margin-top: 60px;
+    
+        @include for-large-up {
+            margin-top: 50px;
+        }
+    }
+
+    &__content-line {
+        display: block;
+
+
+        @include for-large-up {
+            border-top: 1px dashed $blue-color;
+            flex-grow: 1;
+
+            &:nth-of-type(1) {
+                margin-top: 110px;
+            }
+
+            &:nth-of-type(2) {
+                margin-top: 150px;
+            }
+        }
+
+        @include for-large-down {
+            margin-left: 60px;
+            height: 40px;
+            border-left: 1px dashed $blue-color;
+        }
+    }
+}
+
+.workflow-step {
+    padding: 40px;
+
+    &__header {
+        display: flex;
+        align-items: flex-start;
+
+        @include for-large-up {
+            width: 240px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: $secondary-text-color
+    }
+
+    &__pic {
+        margin-left: auto;
+    }
+
+    &__description {
+        margin-top: 10px;
+
+        @include for-large-up {
+            margin-top: 20px;
+            width: 240px;
+        }
+
+    }
+}

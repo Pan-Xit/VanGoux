@@ -1,0 +1,63 @@
+.section {
+    padding: 120px 60px 0 60px;
+
+    @include for-large-up {
+        padding: 120px 160px 0 160px;
+    }
+
+    &__title {
+        position: relative;
+        font-size: 30px;
+        line-height: 60px;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80px;
+            border: 1px solid $blue-color;
+            box-shadow: 0px 2px 0px #D1E1FE;
+
+            bottom: -12px;
+
+            @include for-large-up {
+                bottom: -2px;
+                left: -40px;
+            }
+        }
+    }
+
+    &__content-stairs {
+        @include for-large-up {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        & .content-stairs__item {
+            position: relative;
+            box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+
+            @include for-large-up {
+                &:nth-of-type(2) {
+                    margin-top: 40px;
+                }
+                &:nth-of-type(3) {
+                    margin-top: 80px;
+                }
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png');
+                right: -5px;
+                bottom: -5px;
+            }
+        }
+    }
+}
