@@ -1,6 +1,7 @@
 @import 'breakpoints';
 @import 'variables';
 @import 'common';
+@import 'section';
 @import 'header';
 @import 'headline';
 @import 'reviews';
@@ -8,8 +9,9 @@
 @import 'features';
 @import 'users';
 @import 'purposes';
-
-@import 'section';
+@import 'consultation';
+@import 'stories.scss';
+@import 'footer';
 @import 'hidden';
 
 * {
@@ -33,10 +35,14 @@ body {
     }    
 }
 
-h1, h2, p, figure {
+h1, h2, h3, p, figure {
     margin: 0;
 }
 
 img {
     max-width: 100%;
+}
+
+a, button {
+    cursor: pointer;
 }

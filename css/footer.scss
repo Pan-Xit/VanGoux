@@ -1,0 +1,50 @@
+.page-footer {
+    display: flex;
+    position: relative;
+    padding: 40px;
+    background-color: $footer-section-background;
+
+    @include for-large-down {
+        margin-bottom: 90px;
+    }
+
+    @include for-large-up {
+        padding: 40px 160px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 70px;
+        width: 480px;
+    }
+
+    &__pic {
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+
+        @include for-large-up {
+            right: 160px;
+        }
+    }
+
+    &__social-links {
+        display: flex;
+        margin-left: 50px;
+
+        @include for-large-down {
+            & a:nth-child(n + 2) {
+                margin-left: 3px;
+            }
+        }
+    }
+
+}
+
+.footer-logo {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}

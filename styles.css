@@ -39,6 +39,62 @@
   text-decoration: none;
 }
 
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.section {
+  padding: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 60px 160px;
+  }
+}
+.section__title {
+  position: relative;
+  font-size: 30px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.section__title::after {
+  border: 1px solid #1968fc;
+  box-shadow: 0px 2px 0px #D1E1FE;
+}
+@media screen and (min-width: 1024px) {
+  .section__content-stairs {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.section__content-stairs .content-stairs__item {
+  position: relative;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+}
+@media screen and (min-width: 1024px) {
+  .section__content-stairs .content-stairs__item:nth-of-type(2) {
+    margin-top: 40px;
+  }
+  .section__content-stairs .content-stairs__item:nth-of-type(3) {
+    margin-top: 80px;
+  }
+}
+.section__content-stairs .content-stairs__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png");
+  right: -5px;
+  bottom: -5px;
+}
+
 .page-header {
   margin-top: 40px;
   height: 50px;
@@ -177,6 +233,9 @@
   right: 0;
 }
 
+.workflow {
+  padding-top: 120px;
+}
 .workflow__content {
   margin-top: 60px;
 }
@@ -346,63 +405,148 @@
   margin-left: 20px;
 }
 
-.section {
-  padding: 120px 60px 0 60px;
+.consultation {
+  background-color: #1968fc;
+  color: white;
 }
 @media screen and (min-width: 1024px) {
-  .section {
-    padding: 120px 160px 0 160px;
+  .consultation {
+    position: relative;
   }
 }
-.section__title {
-  position: relative;
-  font-size: 30px;
-  line-height: 60px;
-  text-transform: uppercase;
+.consultation__button {
+  margin-top: 40px;
+  width: 320px;
 }
-.section__title::after {
+.consultation__description {
+  margin-top: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .consultation__description {
+    margin-top: 60px;
+    width: 640px;
+  }
+}
+.consultation__pic {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.consultation__title::after {
   content: "";
   display: block;
   position: absolute;
   width: 80px;
-  border: 1px solid #1968fc;
-  box-shadow: 0px 2px 0px #D1E1FE;
+  border: 1px solid white;
+  box-shadow: 0px 2px 0px #6A9EFF;
   bottom: -12px;
 }
 @media screen and (min-width: 1024px) {
-  .section__title::after {
+  .consultation__title::after {
     bottom: -2px;
     left: -40px;
   }
 }
+
 @media screen and (min-width: 1024px) {
-  .section__content-stairs {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  .stories {
+    padding-top: 120px;
   }
 }
-.section__content-stairs .content-stairs__item {
-  position: relative;
-  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+.stories__content {
+  margin-top: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .section__content-stairs .content-stairs__item:nth-of-type(2) {
+  .stories__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+}
+
+.story-card {
+  display: flex;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1023px) {
+  .story-card:nth-child(n+2) {
     margin-top: 40px;
   }
-  .section__content-stairs .content-stairs__item:nth-of-type(3) {
-    margin-top: 80px;
+}
+.story-card__description {
+  margin-top: 20px;
+}
+.story-card__icon {
+  margin-top: 4px;
+}
+.story-card__text {
+  margin-left: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .story-card__text {
+    width: 420px;
   }
 }
-.section__content-stairs .content-stairs__item::after {
-  content: "";
-  display: block;
+.story-card__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 40px;
+  color: #111111;
+}
+.story-card__description p:nth-child(n+2) {
+  margin-top: 30px;
+}
+.story-card__description a {
+  color: #11223f;
+}
+
+.page-footer {
+  display: flex;
+  position: relative;
+  padding: 40px;
+  background-color: #fbfbfb;
+}
+@media screen and (max-width: 1023px) {
+  .page-footer {
+    margin-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page-footer {
+    padding: 40px 160px;
+  }
+}
+.page-footer__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 70px;
+  width: 480px;
+}
+.page-footer__pic {
   position: absolute;
-  width: 25px;
-  height: 25px;
-  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/DecorationJuju.png");
-  right: -5px;
-  bottom: -5px;
+  right: 40px;
+  bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .page-footer__pic {
+    right: 160px;
+  }
+}
+.page-footer__social-links {
+  display: flex;
+  margin-left: 50px;
+}
+@media screen and (max-width: 1023px) {
+  .page-footer__social-links a:nth-child(n+2) {
+    margin-left: 3px;
+  }
+}
+
+.footer-logo {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -439,12 +583,16 @@ body {
   }
 }
 
-h1, h2, p, figure {
+h1, h2, h3, p, figure {
   margin: 0;
 }
 
 img {
   max-width: 100%;
+}
+
+a, button {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
